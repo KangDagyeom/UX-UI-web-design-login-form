@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100vh; /* Chiều cao toàn bộ viewport */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: white; 
+}
+
+form {
+    display: flex; /* Sử dụng flexbox */
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc trong form */
+    align-items: center; /* Căn giữa theo chiều ngang trong form */
+    height: auto; /* Chiều cao tự động */
+    margin: 10px;
+    border: 1px solid black; /* Tăng độ dày viền để dễ thấy */
+    padding: 10px;
+}
+
+/* Thêm khoảng cách giữa các phần tử trong form */
+form > * {
+    margin-bottom: 10px; /* Khoảng cách giữa các phần tử */
+   
+
+}
+form > .input-group {
+    display: flex; /* Sử dụng flexbox cho nhóm input */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-bottom: 10px; /* Khoảng cách giữa các nhóm input */
+}
+
+form > .input-group label {
+    margin-right: 10px; /* Khoảng cách giữa label và input */
+}
